@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dpcp3fry83ucn"]
+
+[ext_resource type="Texture2D" uid="uid://tcrtcut7kptj" path="res://Pill bottle sptiresheet.png" id="1_kxxto"]
+
+[resource]
+atlas = ExtResource("1_kxxto")
+region = Rect2(0, 0, 4096, 4096)
