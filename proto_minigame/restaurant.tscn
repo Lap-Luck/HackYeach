@@ -1,0 +1,95 @@
+[gd_scene load_steps=14 format=3 uid="uid://dwsbcedib1ey1"]
+
+[ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
+[ext_resource type="Script" uid="uid://b5m88yrpvlfp" path="res://proto_minigame/person_display.gd" id="2_32ace"]
+[ext_resource type="Texture2D" uid="uid://cvw3ixtupkoce" path="res://proto_minigame/per_1.png" id="3_odb1o"]
+[ext_resource type="Texture2D" uid="uid://qesjx8u12f65" path="res://proto_minigame/per_2.png" id="4_vhw0q"]
+[ext_resource type="Texture2D" uid="uid://btpqlsygegu56" path="res://proto_minigame/per_3.png" id="5_uqq3t"]
+[ext_resource type="Script" uid="uid://0guopjhljxx2" path="res://proto_minigame/order_diplay.gd" id="6_ciehn"]
+[ext_resource type="Texture2D" uid="uid://45de6fspf0qg" path="res://proto_minigame/popup_small.png" id="7_7bv6l"]
+[ext_resource type="Texture2D" uid="uid://c14eptgaxvl04" path="res://proto_minigame/popup_big.png" id="8_vo3r1"]
+[ext_resource type="Texture2D" uid="uid://fhme1frdvfwe" path="res://proto_minigame/food1.png" id="9_bk3oc"]
+[ext_resource type="Texture2D" uid="uid://3llpdycclrnk" path="res://proto_minigame/food2.png" id="10_u1iig"]
+[ext_resource type="Texture2D" uid="uid://dol8h47x74681" path="res://proto_minigame/drink1.png" id="11_ftbb6"]
+[ext_resource type="Texture2D" uid="uid://dmo3p483v4m4n" path="res://proto_minigame/drink2.png" id="12_is1fu"]
+[ext_resource type="Texture2D" uid="uid://dsfed3w5wmxdh" path="res://proto_minigame/drink3.png" id="13_bfqxo"]
+
+[node name="Node" type="Node"]
+
+[node name="Bg" type="Sprite2D" parent="."]
+modulate = Color(0.469421, 0.449973, 0.28445, 1)
+position = Vector2(-270.396, -0.624997)
+scale = Vector2(0.190247, 0.226153)
+texture = ExtResource("1_flksb")
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="Camera2D"]
+
+[node name="Person_display" type="Node2D" parent="Camera2D"]
+position = Vector2(-284, -37)
+script = ExtResource("2_32ace")
+
+[node name="Per1" type="Sprite2D" parent="Camera2D/Person_display"]
+texture = ExtResource("3_odb1o")
+
+[node name="Per2" type="Sprite2D" parent="Camera2D/Person_display"]
+visible = false
+position = Vector2(-1, -4)
+texture = ExtResource("4_vhw0q")
+
+[node name="Per3" type="Sprite2D" parent="Camera2D/Person_display"]
+visible = false
+position = Vector2(-4, -12)
+texture = ExtResource("5_uqq3t")
+
+[node name="order_diplay" type="Node2D" parent="Camera2D"]
+position = Vector2(-202, -141)
+scale = Vector2(0.53125, 0.546875)
+script = ExtResource("6_ciehn")
+
+[node name="popup" type="Node2D" parent="Camera2D/order_diplay"]
+position = Vector2(47.0588, 51.2)
+scale = Vector2(3, 3)
+
+[node name="small" type="Sprite2D" parent="Camera2D/order_diplay/popup"]
+visible = false
+position = Vector2(9.41175, -5.48572)
+scale = Vector2(0.705882, 0.742857)
+texture = ExtResource("7_7bv6l")
+
+[node name="big" type="Sprite2D" parent="Camera2D/order_diplay/popup"]
+position = Vector2(9.41175, -5.48572)
+scale = Vector2(0.705882, 0.742857)
+texture = ExtResource("8_vo3r1")
+
+[node name="food" type="Node2D" parent="Camera2D/order_diplay"]
+position = Vector2(13.1765, -3.65714)
+
+[node name="Food1" type="Sprite2D" parent="Camera2D/order_diplay/food"]
+position = Vector2(1.88234, -5.48572)
+scale = Vector2(0.705882, 0.742857)
+texture = ExtResource("9_bk3oc")
+
+[node name="Food2" type="Sprite2D" parent="Camera2D/order_diplay/food"]
+position = Vector2(3.76469, -5.48572)
+scale = Vector2(0.705882, 0.742857)
+texture = ExtResource("10_u1iig")
+
+[node name="drink" type="Node2D" parent="Camera2D/order_diplay"]
+position = Vector2(109.176, -18.2857)
+
+[node name="NONE" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
+visible = false
+
+[node name="Drink1" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
+visible = false
+texture = ExtResource("11_ftbb6")
+
+[node name="Drink2" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
+visible = false
+texture = ExtResource("12_is1fu")
+
+[node name="Drink3" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
+texture = ExtResource("13_bfqxo")
