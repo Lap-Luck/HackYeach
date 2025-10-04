@@ -1,8 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://eheurgu137sm"]
+[gd_scene load_steps=7 format=3 uid="uid://eheurgu137sm"]
 
 [ext_resource type="Texture2D" uid="uid://rd05lmvjuf5l" path="res://graphics/background-image-placeholder.png" id="1_w18ys"]
 [ext_resource type="PackedScene" uid="uid://7djygch4t0tg" path="res://scenes/email.tscn" id="2_reixx"]
+[ext_resource type="Texture2D" uid="uid://tcrtcut7kptj" path="res://Pill bottle sptiresheet.png" id="3_reixx"]
 [ext_resource type="Texture2D" uid="uid://dpcp3fry83ucn" path="res://resources/pills_text.tres" id="3_uhids"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uhids"]
+atlas = ExtResource("3_reixx")
+region = Rect2(0, 0, 4096, 4096)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxilm"]
+atlas = ExtResource("3_reixx")
+region = Rect2(4096, 0, 4096, 4096)
 
 [node name="Home" type="Control"]
 layout_mode = 3
@@ -41,8 +50,8 @@ grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.13788101
 scale = Vector2(0.07, 0.07)
-texture_normal = ExtResource("3_uhids")
-texture_pressed = ExtResource("3_uhids")
+texture_normal = SubResource("AtlasTexture_uhids")
+texture_pressed = SubResource("AtlasTexture_yxilm")
 
 [node name="FoodButton" type="TextureButton" parent="."]
 layout_mode = 1
