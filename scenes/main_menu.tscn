@@ -62,7 +62,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("3_8ln24")
 
-[node name="Settings" type="Button" parent="Background/Screen/VBoxContainer/MarginContainer2"]
+[node name="SettingsButton" type="Button" parent="Background/Screen/VBoxContainer/MarginContainer2"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "SETTINGS"
@@ -88,6 +88,6 @@ size_flags_vertical = 3
 text = "QUIT"
 
 [connection signal="pressed" from="Background/Screen/VBoxContainer/MarginContainer/BackToGame" to="." method="_on_back_to_game_pressed"]
-[connection signal="pressed" from="Background/Screen/VBoxContainer/MarginContainer2/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Background/Screen/VBoxContainer/MarginContainer2/SettingsButton" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Background/Screen/VBoxContainer/MarginContainer3/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Background/Screen/VBoxContainer/MarginContainer4/Quit" to="." method="_on_quit_pressed"]

@@ -6,17 +6,19 @@ func _ready() -> void:
 
 
 func _on_back_to_game_pressed() -> void:
-	get_tree().change_scene_to_file("res://resources/home.tscn")
+	var first_day = load("res://scenes/home.tscn")
+	get_tree().change_scene_to_packed(first_day)
 
 
 func _on_settings_pressed() -> void:
-	add_child(Settings)
+
+	add_child(Globals.Settings.instantiate())
 	pass # Replace with function body.
 
 
 func _on_credits_pressed() -> void:
 	var credits_scene = load("res://scenes/credits.tscn")
-	add_child(credits_scene)
+	add_child(credits_scene.instantiate())
 	pass # Replace with function body.
 
 
