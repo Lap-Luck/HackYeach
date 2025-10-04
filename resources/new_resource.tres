@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="FoodRes" load_steps=4 format=3 uid="uid://cvv74ussin6o"]
+
+[ext_resource type="Script" uid="uid://cirrc86ef60fn" path="res://scripts/FoodRes.gd" id="1_8jnv3"]
+[ext_resource type="Texture2D" uid="uid://c6wtuv6pmjpf3" path="res://assets/potato.png" id="2_crpk3"]
+[ext_resource type="Texture2D" uid="uid://laf1oa8uq0ct" path="res://assets/fires.png" id="3_5qgb2"]
+
+[resource]
+script = ExtResource("1_8jnv3")
+type = "fries"
+tex1 = ExtResource("2_crpk3")
+tex2 = ExtResource("3_5qgb2")
+scale = 0.1
+metadata/_custom_type_script = "uid://cirrc86ef60fn"
