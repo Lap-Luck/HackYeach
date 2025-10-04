@@ -13,12 +13,22 @@ func _ready() -> void:
 	update_mail()
 	
 func setup_buttons():
-	$"Emails2/Emails/PersonTile/Person says shit/email pfp".connect("pressed",func():
-		select(0)
-		)
-	$"Emails2/Emails/PersonTile2/Person says shit/email pfp".connect("pressed",func():
-		select(1)
-		)
+	for i in range($Emails2/Emails.get_child_count()):
+		$"Emails2/Emails".get_child(i).get_node("Person says shit/email pfp").connect("pressed",func():
+			select(i)
+			)
+	$Emails2/MainMail/VBoxContainer/ColorRect3/Button.connect("pressed",func(): resp(0))
+	$Emails2/MainMail/VBoxContainer/ColorRect3/Button2.connect("pressed",func(): resp(1))
+
+var curr_mail_responses_callback=[]
+
+func resp(id):
+	if id<curr_mail_responses_callback.size():
+		curr_mail_responses_callback[id].call()
+	print(id)
+	update_bank()
+	update_mail()
+
 
 func select(r_id):
 	var id=StoryManager.mails.size()-1-r_id
@@ -26,7 +36,15 @@ func select(r_id):
 			$Emails2/Emails.get_child(i).get_node("ColorRect").visible=false
 	$Emails2/Emails.get_child(r_id).get_node("ColorRect").visible=true
 	$Emails2/MainMail/VBoxContainer/ColorRect2/Label.text=StoryManager.mails[id].text
-
+	$Emails2/MainMail/VBoxContainer/ColorRect3/Button.text="aaaa"
+	#$Emails2/MainMail/VBoxContainer/ColorRect3/Button.disconnect("pressed",)
+	curr_mail_responses_callback=[]
+	if StoryManager.mails[id].responses.size()>0:
+		$Emails2/MainMail/VBoxContainer/ColorRect3/Button.text=StoryManager.mails[id].responses[0]
+		#$Emails2/MainMail/VBoxContainer/ColorRect3/Button.connect("pressed",func():print("run"))
+		curr_mail_responses_callback=StoryManager.mails[id].responses_callback
+	
+	
 func pad(text:String,size):
 	while text.length()<size:
 		text+=" "

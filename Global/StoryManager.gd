@@ -70,7 +70,18 @@ func STORY_day_end():
 		bank.append(Transction.new(25,"job salary dcreese due to working badly"))
 	fine=false
 	current_day+=1
-	
-	
+	var go_to_work=Mail.new(
+			"""
+Hi,   
+You still not on the job.
+Jon
+			""","Jon@friends",[],[],current_day)
+	go_to_work.responses.append("GO WORK")
+	go_to_work.responses_callback.append(func():
+				StoryManager.mails.erase(go_to_work)
+				get_tree().change_scene_to_file("res://proto_minigame/restaurant.tscn")
+				)
+	mails.append(go_to_work)
+
 	
 	
