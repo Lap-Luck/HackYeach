@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg3bwlufxthyn"]
+
+[ext_resource type="Script" uid="uid://cdbegrm1x8l2v" path="res://pause_menu.gd" id="1_myx47"]
+[ext_resource type="Theme" uid="uid://bmi40nndr4ctm" path="res://resources/menu_margin_theme.tres" id="2_kukqi"]
+
+[node name="PauseMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_myx47")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 100
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_kukqi")
+
+[node name="BackToGame" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "BACK TO GAME"
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_kukqi")
+
+[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "SETTINGS"
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_kukqi")
+
+[node name="MainMenu" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer3"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "MAIN MENU"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/MarginContainer/BackToGame" to="." method="_on_back_to_game_pressed"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/MarginContainer2/Settings" to="." method="_on_settings_toggled"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/MarginContainer3/MainMenu" to="." method="_on_main_menu_toggled"]
