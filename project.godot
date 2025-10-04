@@ -18,4 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 StoryManager="*res://Global/StoryManager.gd"
+
+[display]
+
+window/size/viewport_width=1800
 Globals="*res://globals.gd"

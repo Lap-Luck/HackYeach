@@ -247,6 +247,19 @@ text = "aaaaaaaaaaaaaaaaa"
 layout_mode = 2
 size_flags_vertical = 3
 
+[node name="Button" type="Button" parent="EmailBankApp/Emails2/MainMail/VBoxContainer/ColorRect3"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "aaaaaaaaaaaaaaaaaa"
+
+[node name="Button2" type="Button" parent="EmailBankApp/Emails2/MainMail/VBoxContainer/ColorRect3"]
+layout_mode = 0
+offset_left = 193.0
+offset_right = 369.0
+offset_bottom = 31.0
+text = "aaaaaaaaaaaaaaaaaa"
+
 [node name="Bank account" type="Container" parent="EmailBankApp"]
 visible = false
 layout_mode = 2
