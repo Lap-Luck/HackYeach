@@ -11,8 +11,8 @@ func _on_back_to_game_pressed() -> void:
 
 
 func _on_settings_pressed() -> void:
-
-	add_child(Globals.Settings.instantiate())
+	var g=Globals
+	add_child(g.Settings.instantiate())
 	pass # Replace with function body.
 
 
