@@ -14,6 +14,7 @@ func _init(fr: FoodRes, c: bool = false):
 		texture = foodRes.tex1;
 	z_index = 10;
 	scale *= foodRes.scale;
+	modulate =  foodRes.colorModulate
 
 func _process(_delta: float) -> void:
 	position = get_global_mouse_position();

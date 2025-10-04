@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dwsbcedib1ey1"]
+[gd_scene load_steps=24 format=3 uid="uid://dwsbcedib1ey1"]
 
 [ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
 [ext_resource type="Script" uid="uid://b5m88yrpvlfp" path="res://proto_minigame/person_display.gd" id="2_32ace"]
@@ -13,6 +13,26 @@
 [ext_resource type="Texture2D" uid="uid://dol8h47x74681" path="res://proto_minigame/drink1.png" id="11_ftbb6"]
 [ext_resource type="Texture2D" uid="uid://dmo3p483v4m4n" path="res://proto_minigame/drink2.png" id="12_is1fu"]
 [ext_resource type="Texture2D" uid="uid://dsfed3w5wmxdh" path="res://proto_minigame/drink3.png" id="13_bfqxo"]
+[ext_resource type="PackedScene" uid="uid://dre3dcxk8viv" path="res://objects/FoodBox.tscn" id="14_bk3oc"]
+[ext_resource type="Script" uid="uid://dvyrp6yvu3hom" path="res://proto_minigame/plate.gd" id="15_70miy"]
+[ext_resource type="Script" uid="uid://cirrc86ef60fn" path="res://scripts/FoodRes.gd" id="15_bfqxo"]
+[ext_resource type="Resource" uid="uid://cct5blskht6yr" path="res://resources/new_resource.tres" id="15_u1iig"]
+[ext_resource type="PackedScene" uid="uid://c5sf0gd3y6ume" path="res://objects/Cooker.tscn" id="16_ftbb6"]
+[ext_resource type="Texture2D" uid="uid://c6wtuv6pmjpf3" path="res://assets/potato.png" id="16_iatil"]
+[ext_resource type="Texture2D" uid="uid://laf1oa8uq0ct" path="res://assets/fires.png" id="17_n6ibe"]
+[ext_resource type="Script" uid="uid://djdk2w8w80ta0" path="res://scripts/Player.gd" id="17_u1iig"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iatil"]
+radius = 34.0588
+
+[sub_resource type="Resource" id="Resource_70miy"]
+script = ExtResource("15_bfqxo")
+type = "Gfries"
+tex1 = ExtResource("16_iatil")
+tex2 = ExtResource("17_n6ibe")
+scale = 0.1
+colorModulate = Color(0.568627, 1, 0, 1)
+metadata/_custom_type_script = "uid://cirrc86ef60fn"
 
 [node name="Node" type="Node"]
 
@@ -93,3 +113,33 @@ texture = ExtResource("12_is1fu")
 
 [node name="Drink3" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
 texture = ExtResource("13_bfqxo")
+
+[node name="plate" type="Area2D" parent="Camera2D"]
+position = Vector2(-285, 68)
+script = ExtResource("15_70miy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Camera2D/plate"]
+shape = SubResource("CircleShape2D_iatil")
+
+[node name="FoodBox" parent="." instance=ExtResource("14_bk3oc")]
+position = Vector2(298, -183)
+foodRes = SubResource("Resource_70miy")
+
+[node name="Food2" type="Sprite2D" parent="FoodBox"]
+position = Vector2(-3, 2)
+texture = ExtResource("10_u1iig")
+
+[node name="FoodBox2" parent="." instance=ExtResource("14_bk3oc")]
+position = Vector2(293, 18)
+foodRes = ExtResource("15_u1iig")
+
+[node name="Food1" type="Sprite2D" parent="FoodBox2"]
+position = Vector2(-7, 3)
+texture = ExtResource("9_bk3oc")
+
+[node name="Cooker" parent="." instance=ExtResource("16_ftbb6")]
+position = Vector2(710, -183)
+
+[node name="Player" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("17_u1iig")

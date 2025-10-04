@@ -1,5 +1,7 @@
 extends Node2D
 
+var food_id=-1
+
 func display(node,cid):
 	for c:Sprite2D in node.get_children():
 		c.visible=false
@@ -10,7 +12,7 @@ func rand_id(node):
 
 func gen():
 	#rand_id($popup)
-	var food_id=rand_id($food)
+	food_id=rand_id($food)
 	var drink_id=rand_id($drink)
 	
 	display($food,food_id)
