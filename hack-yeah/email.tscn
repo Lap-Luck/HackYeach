@@ -1,0 +1,1012 @@
+[gd_scene format=3 uid="uid://7djygch4t0tg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+current_tab = 1
+
+[node name="Emails2" type="HBoxContainer" parent="TabContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+metadata/_tab_index = 0
+
+[node name="ColorRect" type="VBoxContainer" parent="TabContainer/Emails2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.4
+
+[node name="PersonTile" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile8" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile8"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile8/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile8/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile8/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile8/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile8/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile9" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile9"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile9/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile9/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile9/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile9/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile9/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile10" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile10"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile10/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile10/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile10/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile10/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile10/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile11" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile11"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile11/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile11/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile11/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile11/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile11/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile12" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile12"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile12/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile12/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile12/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile12/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile12/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile13" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile13"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile13/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile13/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile13/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile13/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile13/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile14" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile14"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile14/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile14/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile14/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile14/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile14/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile15" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile15"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile15/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile15/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile15/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile15/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile15/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile16" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile16"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile16/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile16/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile16/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile16/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile16/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile17" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile17"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile17/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile17/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile17/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile17/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile17/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile18" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile18"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile18/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile18/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile18/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile18/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile18/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile19" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile19"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile19/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile19/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile19/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile19/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile19/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile20" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile20"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile20/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile20/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile20/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile20/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile20/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile21" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile21"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile21/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile21/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile21/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile21/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile21/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile22" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile22"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile22/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile22/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile22/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile22/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile22/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile23" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile23"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile23/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile23/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile23/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile23/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile23/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile24" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile24"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile24/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile24/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile24/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile24/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile24/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile25" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile25"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile25/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile25/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile25/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile25/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile25/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile26" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile26"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile26/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile26/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile26/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile26/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile26/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile27" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile27"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile27/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile27/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile27/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile27/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile27/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile2" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile2"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile2/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile2/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile2/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile2/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile2/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile3" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile3"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile3/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile3/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile3/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile3/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile3/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile4" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile4"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile4/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile4/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile4/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile4/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile4/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile5" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile5"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile5/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile5/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile5/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile5/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile5/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile6" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile6"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile6/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile6/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile6/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile6/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile6/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="PersonTile7" type="MarginContainer" parent="TabContainer/Emails2/ColorRect"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Person says shit" type="HBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile7"]
+layout_mode = 2
+
+[node name="email pfp" type="TextureRect" parent="TabContainer/Emails2/ColorRect/PersonTile7/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Msg details" type="MarginContainer" parent="TabContainer/Emails2/ColorRect/PersonTile7/Person says shit"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect/PersonTile7/Person says shit/Msg details"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="who" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile7/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+text = "A PERSON"
+
+[node name="when" type="Label" parent="TabContainer/Emails2/ColorRect/PersonTile7/Person says shit/Msg details/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Today 3:05"
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="ColorRect2" type="MarginContainer" parent="TabContainer/Emails2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Emails2/ColorRect2"]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="TabContainer/Emails2/ColorRect2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ColorRect2" type="ColorRect" parent="TabContainer/Emails2/ColorRect2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+
+[node name="ColorRect3" type="ColorRect" parent="TabContainer/Emails2/ColorRect2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Bank account" type="Container" parent="TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Label" type="Label" parent="TabContainer/Bank account"]
+layout_mode = 2
+text = "this is the place for bank moni graphic $$$"
