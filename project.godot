@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="Live"
-config/features=PackedStringArray("4.5", "Forward Plus")
+run/main_scene="res://proto_minigame/pc_test.tscn"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
