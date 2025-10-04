@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qesjx8u12f65"
-path="res://.godot/imported/per_2.png-bb783d7dd7d1aeb161a7bd36a179e90b.ctex"
+uid="uid://buxh5qxwg4ci4"
+path="res://.godot/imported/eye.png-9085a346c39ce13113fe3dad13427bc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://proto_minigame/per_2.png"
-dest_files=["res://.godot/imported/per_2.png-bb783d7dd7d1aeb161a7bd36a179e90b.ctex"]
+source_file="res://proto_minigame/eye.png"
+dest_files=["res://.godot/imported/eye.png-9085a346c39ce13113fe3dad13427bc2.ctex"]
 
 [params]
 
