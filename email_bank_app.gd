@@ -3,6 +3,7 @@ extends TabContainer
 
 
 func _ready() -> void:
+	Globals.food
 	setup_buttons()
 	if not Globals.intro:
 		StoryManager.STORY_unhappy_customer("Joe","he","burger",StoryManager.Complain.GET_BETTER)
@@ -74,3 +75,8 @@ func update_mail():
 			$Emails2/Emails.get_child(r_id).get_node("Person says shit/Msg details/VBoxContainer/who").text=mail.from
 			$Emails2/Emails.get_child(r_id).get_node("Person says shit/Msg details/VBoxContainer/when").text="Day "+str(mail.send_day)
 	var bank_text=""
+
+
+func _on_tab_selected(tab: int) -> void:
+	update_bank()
+	update_mail()
