@@ -18,3 +18,10 @@ func reduce_food(amount: int):
 	print("Food: ", Sanity)
 	if food == 0:
 		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+
+func reset():
+	print("XXXXXXXXXXXX")
+	Sanity = 100;
+	food = 100;
+	intro=false
+	StoryManager.current_day=0

@@ -6,6 +6,7 @@ func _ready() -> void:
 
 
 func _on_back_to_game_pressed() -> void:
+	Globals.reset()
 	var first_day = load("res://scenes/home.tscn")
 	get_tree().change_scene_to_packed(first_day)
 
