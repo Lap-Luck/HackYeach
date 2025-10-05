@@ -3,9 +3,10 @@ extends Node2D
 var person_id=-1
 
 func display(node,cid):
-	for c:Sprite2D in node.get_children():
+	for c:AnimatedSprite2D in node.get_children():
 		c.visible=false
 	node.get_child(cid).visible=true
+	node.get_child(cid).play("evil" if Globals.Sanity < 80 else "default")
 
 func rand_id(node):
 	return randi()%node.get_child_count()

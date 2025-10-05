@@ -23,7 +23,8 @@ MusicManager="*res://MusicManager.tscn"
 
 [display]
 
-window/size/viewport_width=1800
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 Globals="*res://globals.gd"
 
 [input]
