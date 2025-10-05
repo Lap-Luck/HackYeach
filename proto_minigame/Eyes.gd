@@ -1,6 +1,10 @@
-extends AnimatedSprite2D
+extends Node2D
 
+@export var inverted := false;
+@export var threshold := 80;
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	visible = Globals.Sanity < 80;
+	if inverted:
+		visible = Globals.Sanity >= 80
+	else:
+		visible = Globals.Sanity < 80;
