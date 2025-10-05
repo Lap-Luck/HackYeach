@@ -24,6 +24,8 @@ func handleLMB():
 	var foodBoxes := foodBoxesDict.map(func (res: Dictionary): return res["collider"])
 	var cookersDict := results.filter(func (res: Dictionary): return res["collider"] is Cooker);
 	var cookers := cookersDict.map(func (res: Dictionary): return res["collider"])
+	var platesDict := results.filter(func (res: Dictionary): return res["collider"] is ClientPlate);
+	var plates := platesDict.map(func (res: Dictionary): return res["collider"])
 	
 	if foodBoxes.size() != 0:
 		if not picked_obj:
@@ -56,3 +58,10 @@ func handleLMB():
 					add_child(picked_obj)
 			else:
 				print("Cannot pick, object in hand");
+	elif plates.size() !=0:
+		if picked_obj:
+			var plate := plates[0] as ClientPlate
+			plate.sevrve(picked_obj as Food)
+		
+			picked_obj.queue_free();
+			picked_obj = null;

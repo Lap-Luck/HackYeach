@@ -40,7 +40,7 @@ func STORY_unhappy_customer(name,he_she,food,complain:Complain):
 		mails.append(Mail.new(
 			my_replace("""
 Hi,   
-We got compain from NAME. HE_SHE got FOOD owercooked.
+We got compain from NAME, HE_SHE got FOOD owercooked.
 You shoud do better next time.
 
 Joe Doe
@@ -71,11 +71,12 @@ func STORY_day_end():
 	fine=false
 	current_day+=1
 	var go_to_work=Mail.new(
-			"""
+			my_replace("""
 Hi,   
 You still not on the job.
+day DAY
 Jon
-			""","Jon@friends",[],[],current_day)
+			""",{"DAY":str(current_day)}),"Jon@friends",[],[],current_day)
 	go_to_work.responses.append("GO WORK")
 	go_to_work.responses_callback.append(func():
 				StoryManager.mails.erase(go_to_work)

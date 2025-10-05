@@ -4,10 +4,12 @@ extends TabContainer
 
 func _ready() -> void:
 	setup_buttons()
-	StoryManager.STORY_unhappy_customer("Joe","he","burger",StoryManager.Complain.GET_BETTER)
-	StoryManager.STORY_day_end()
-	StoryManager.STORY_unhappy_customer("Joe","he","burger",StoryManager.Complain.GOT_FINE)
-	StoryManager.STORY_day_end()
+	if not Globals.intro:
+		StoryManager.STORY_unhappy_customer("Joe","he","burger",StoryManager.Complain.GET_BETTER)
+		StoryManager.STORY_day_end()
+		StoryManager.STORY_unhappy_customer("Joe","he","burger",StoryManager.Complain.GOT_FINE)
+		StoryManager.STORY_day_end()
+		Globals.intro=true
 	
 	update_bank()
 	update_mail()
@@ -66,7 +68,7 @@ func update_mail():
 		m.visible=false
 	for r_id in range(StoryManager.mails.size()):
 		var id=StoryManager.mails.size()-1-r_id
-		if r_id<=4:
+		if r_id<=3:
 			var mail:StoryManager.Mail=StoryManager.mails[id]
 			$Emails2/Emails.get_child(r_id).visible=true
 			$Emails2/Emails.get_child(r_id).get_node("Person says shit/Msg details/VBoxContainer/who").text=mail.from
