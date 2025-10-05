@@ -20,7 +20,8 @@ func _ready() -> void:
 	
 func setup_buttons():
 	for i in range($Emails2/Emails.get_child_count()):
-		$"Emails2/Emails".get_child(i).get_node("Person says shit/email pfp").connect("pressed",func():
+		$"Emails2/Emails".get_child(i).get_node("email pfp").connect("pressed",func():
+			print("pressed ", i)
 			select(i)
 			)
 	$Emails2/MainMail/VBoxContainer/ColorRect3/Button.connect("pressed",func(): resp(0))

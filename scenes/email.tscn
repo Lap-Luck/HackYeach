@@ -55,12 +55,6 @@ color = Color(0.252028, 0.252028, 0.252028, 1)
 [node name="Person says shit" type="HBoxContainer" parent="EmailBankApp/Emails2/Emails/PersonTile"]
 layout_mode = 2
 
-[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile/Person says shit"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_stretch_ratio = 0.5
-texture_normal = ExtResource("2_l5d43")
-
 [node name="Msg details" type="MarginContainer" parent="EmailBankApp/Emails2/Emails/PersonTile/Person says shit"]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -86,6 +80,11 @@ text = "Today 3:05"
 horizontal_alignment = 2
 vertical_alignment = 2
 
+[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("2_l5d43")
+
 [node name="PersonTile2" type="MarginContainer" parent="EmailBankApp/Emails2/Emails"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -97,12 +96,6 @@ color = Color(0.252028, 0.252028, 0.252028, 1)
 
 [node name="Person says shit" type="HBoxContainer" parent="EmailBankApp/Emails2/Emails/PersonTile2"]
 layout_mode = 2
-
-[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile2/Person says shit"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_stretch_ratio = 0.5
-texture_normal = ExtResource("2_l5d43")
 
 [node name="Msg details" type="MarginContainer" parent="EmailBankApp/Emails2/Emails/PersonTile2/Person says shit"]
 layout_mode = 2
@@ -129,6 +122,11 @@ text = "Today 3:05"
 horizontal_alignment = 2
 vertical_alignment = 2
 
+[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile2"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("2_l5d43")
+
 [node name="PersonTile3" type="MarginContainer" parent="EmailBankApp/Emails2/Emails"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -140,12 +138,6 @@ color = Color(0.252028, 0.252028, 0.252028, 1)
 
 [node name="Person says shit" type="HBoxContainer" parent="EmailBankApp/Emails2/Emails/PersonTile3"]
 layout_mode = 2
-
-[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile3/Person says shit"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_stretch_ratio = 0.5
-texture_normal = ExtResource("2_l5d43")
 
 [node name="Msg details" type="MarginContainer" parent="EmailBankApp/Emails2/Emails/PersonTile3/Person says shit"]
 layout_mode = 2
@@ -172,6 +164,11 @@ text = "Today 3:05"
 horizontal_alignment = 2
 vertical_alignment = 2
 
+[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile3"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("2_l5d43")
+
 [node name="PersonTile4" type="MarginContainer" parent="EmailBankApp/Emails2/Emails"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -183,12 +180,6 @@ color = Color(0.252028, 0.252028, 0.252028, 1)
 
 [node name="Person says shit" type="HBoxContainer" parent="EmailBankApp/Emails2/Emails/PersonTile4"]
 layout_mode = 2
-
-[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile4/Person says shit"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_stretch_ratio = 0.5
-texture_normal = ExtResource("2_l5d43")
 
 [node name="Msg details" type="MarginContainer" parent="EmailBankApp/Emails2/Emails/PersonTile4/Person says shit"]
 layout_mode = 2
@@ -214,6 +205,11 @@ theme_override_fonts/font = ExtResource("3_u4565")
 text = "Today 3:05"
 horizontal_alignment = 2
 vertical_alignment = 2
+
+[node name="email pfp" type="TextureButton" parent="EmailBankApp/Emails2/Emails/PersonTile4"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.5
+texture_normal = ExtResource("2_l5d43")
 
 [node name="MainMail" type="MarginContainer" parent="EmailBankApp/Emails2"]
 layout_mode = 2
