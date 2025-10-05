@@ -43,7 +43,8 @@ func select(r_id):
 			$Emails2/Emails.get_child(i).get_node("ColorRect").visible=false
 	$Emails2/Emails.get_child(r_id).get_node("ColorRect").visible=true
 	$Emails2/MainMail/VBoxContainer/ColorRect2/Label.text=StoryManager.mails[id].text
-	$Emails2/MainMail/VBoxContainer/ColorRect3/Button.text="aaaa"
+	$Emails2/MainMail/VBoxContainer/ColorRect3/Button.text="______"
+	$Emails2/MainMail/VBoxContainer/ColorRect3/Button2.text="______"
 	#$Emails2/MainMail/VBoxContainer/ColorRect3/Button.disconnect("pressed",)
 	curr_mail_responses_callback=[]
 	if StoryManager.mails[id].responses.size()>0:
