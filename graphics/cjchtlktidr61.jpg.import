@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://idoo4rggf67e"
-path="res://.godot/imported/raf_drink2.png-daf96848bc142519013bae44df56ce67.ctex"
+uid="uid://dmr7wgwwf2dx0"
+path="res://.godot/imported/cjchtlktidr61.jpg-1d9bb70114d99c5731fcfce411ceb4d3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://proto_minigame/raf_drink2.png"
-dest_files=["res://.godot/imported/raf_drink2.png-daf96848bc142519013bae44df56ce67.ctex"]
+source_file="res://graphics/cjchtlktidr61.jpg"
+dest_files=["res://.godot/imported/cjchtlktidr61.jpg-1d9bb70114d99c5731fcfce411ceb4d3.ctex"]
 
 [params]
 

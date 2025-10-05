@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://eheurgu137sm"]
 
-[ext_resource type="Texture2D" uid="uid://rd05lmvjuf5l" path="res://graphics/background-image-placeholder.png" id="1_w18ys"]
+[ext_resource type="Texture2D" uid="uid://dmr7wgwwf2dx0" path="res://graphics/cjchtlktidr61.jpg" id="1_mahjx"]
 [ext_resource type="PackedScene" uid="uid://7djygch4t0tg" path="res://scenes/email.tscn" id="2_reixx"]
 [ext_resource type="Texture2D" uid="uid://tcrtcut7kptj" path="res://Pill bottle sptiresheet.png" id="3_reixx"]
 [ext_resource type="Texture2D" uid="uid://dpcp3fry83ucn" path="res://resources/pills_text.tres" id="3_uhids"]
@@ -36,17 +36,24 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -358.0
+offset_top = -104.0
+offset_right = 544.66675
+offset_bottom = 933.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_w18ys")
+texture = ExtResource("1_mahjx")
+expand_mode = 5
+stretch_mode = 5
 
 [node name="Screen" parent="Background" instance=ExtResource("2_reixx")]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.221
-anchor_top = 0.233
-anchor_right = 0.77
-anchor_bottom = 0.884
+anchor_left = 0.2936939
+anchor_top = 0.114785075
+anchor_right = 0.65647143
+anchor_bottom = 0.47756258
+metadata/_edit_use_anchors_ = true
 
 [node name="PillsButton" type="TextureButton" parent="."]
 layout_mode = 1
@@ -85,10 +92,10 @@ script = ExtResource("6_yxilm")
 [node name="Bars" parent="." instance=ExtResource("7_mahjx")]
 unique_name_in_owner = true
 layout_mode = 1
-offset_left = 30.0
-offset_top = 139.0
-offset_right = 30.0
-offset_bottom = 139.00002
+offset_left = 11.0
+offset_top = 13.0
+offset_right = 11.0
+offset_bottom = 13.000023
 
 [connection signal="pressed" from="PillsButton" to="PillsButton" method="_on_pressed"]
 [connection signal="pressed" from="FoodButton" to="FoodButton" method="_on_pressed"]

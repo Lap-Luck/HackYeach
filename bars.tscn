@@ -26,7 +26,8 @@ gradient = SubResource("Gradient_ha74j")
 [node name="Bars" type="Control"]
 layout_mode = 3
 anchor_right = 0.3
-anchor_bottom = 0.233
+anchor_bottom = 0.109000005
+offset_bottom = 0.27999115
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5b7ij")
