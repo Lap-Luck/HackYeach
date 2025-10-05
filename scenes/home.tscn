@@ -1,11 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://eheurgu137sm"]
+[gd_scene load_steps=15 format=3 uid="uid://eheurgu137sm"]
 
 [ext_resource type="Texture2D" uid="uid://dmr7wgwwf2dx0" path="res://graphics/cjchtlktidr61.jpg" id="1_mahjx"]
 [ext_resource type="PackedScene" uid="uid://7djygch4t0tg" path="res://scenes/email.tscn" id="2_reixx"]
 [ext_resource type="Texture2D" uid="uid://tcrtcut7kptj" path="res://Pill bottle sptiresheet.png" id="3_reixx"]
 [ext_resource type="Texture2D" uid="uid://dpcp3fry83ucn" path="res://resources/pills_text.tres" id="3_uhids"]
 [ext_resource type="Script" uid="uid://5t854lx5lfo7" path="res://scenes/pills_button.gd" id="4_uhids"]
-[ext_resource type="Script" uid="uid://c5meth4er460q" path="res://scenes/food_button.gd" id="6_yxilm"]
+[ext_resource type="Script" path="res://scenes/food_button.gd" id="6_yxilm"]
 [ext_resource type="PackedScene" uid="uid://t203hpf0oqqk" path="res://bars.tscn" id="7_mahjx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhids"]
@@ -15,6 +15,66 @@ region = Rect2(0, 0, 4096, 4096)
 [sub_resource type="AtlasTexture" id="AtlasTexture_yxilm"]
 atlas = ExtResource("3_reixx")
 region = Rect2(4096, 0, 4096, 4096)
+
+[sub_resource type="Animation" id="Animation_mahjx"]
+resource_name = "animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(29.988, -900), Vector2(29.988, -1200)]
+}
+
+[sub_resource type="Animation" id="Animation_4fycn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(29.988, -1200)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vc333"]
+_data = {
+&"RESET": SubResource("Animation_4fycn"),
+&"animation": SubResource("Animation_mahjx")
+}
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yxilm"]
 load_path = "res://.godot/imported/sprite_sheet_2.png-310de168937273588b12da9aec0f56a4.ctex"
@@ -72,6 +132,22 @@ texture_normal = SubResource("AtlasTexture_uhids")
 texture_pressed = SubResource("AtlasTexture_yxilm")
 script = ExtResource("4_uhids")
 
+[node name="Label" type="Label" parent="PillsButton"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 29.988
+offset_top = -1200.0
+offset_right = 3123.988
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 1080
+text = "- $$$$"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PillsButton"]
+libraries = {
+&"": SubResource("AnimationLibrary_vc333")
+}
+
 [node name="FoodButton" type="TextureButton" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -88,6 +164,22 @@ scale = Vector2(0.07, 0.07)
 texture_normal = SubResource("AtlasTexture_mahjx")
 texture_pressed = ExtResource("3_uhids")
 script = ExtResource("6_yxilm")
+
+[node name="Label" type="Label" parent="FoodButton"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 29.988
+offset_top = -1200.0
+offset_right = 3123.988
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 1080
+text = "- $$$$"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FoodButton"]
+libraries = {
+&"": SubResource("AnimationLibrary_vc333")
+}
 
 [node name="Bars" parent="." instance=ExtResource("7_mahjx")]
 unique_name_in_owner = true

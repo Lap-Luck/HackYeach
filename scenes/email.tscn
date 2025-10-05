@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://7djygch4t0tg"]
+[gd_scene load_steps=5 format=3 uid="uid://7djygch4t0tg"]
 
 [ext_resource type="Script" uid="uid://cdl1qy0a03gmg" path="res://email_bank_app.gd" id="1_b7pj5"]
 [ext_resource type="Texture2D" uid="uid://buxh5qxwg4ci4" path="res://proto_minigame/eye.png" id="2_l5d43"]
 [ext_resource type="FontFile" uid="uid://1sj30jac7go8" path="res://graphics/wwq/CascadiaCode-Regular.ttf" id="3_u4565"]
+
+[sub_resource type="Theme" id="Theme_bd1t5"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -243,18 +245,27 @@ text = "aaaaaaaaaaaaaaaaa"
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Button" type="Button" parent="EmailBankApp/Emails2/MainMail/VBoxContainer/ColorRect3"]
+[node name="BoxContainer" type="BoxContainer" parent="EmailBankApp/Emails2/MainMail/VBoxContainer/ColorRect3"]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
-text = "aaaaaaaaaaaaaaaaaa"
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 64
 
-[node name="Button2" type="Button" parent="EmailBankApp/Emails2/MainMail/VBoxContainer/ColorRect3"]
-layout_mode = 0
-offset_left = 193.0
-offset_right = 369.0
-offset_bottom = 31.0
-text = "aaaaaaaaaaaaaaaaaa"
+[node name="Button" type="Button" parent="EmailBankApp/Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer"]
+self_modulate = Color(0, 1, 1, 1)
+layout_mode = 2
+theme = SubResource("Theme_bd1t5")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "aaaaaaa"
+
+[node name="Button2" type="Button" parent="EmailBankApp/Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer"]
+self_modulate = Color(0, 1, 1, 1)
+layout_mode = 2
+theme = SubResource("Theme_bd1t5")
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 32
+text = "aaaaaaa"
 
 [node name="Bank account" type="Container" parent="EmailBankApp"]
 visible = false

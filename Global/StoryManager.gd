@@ -81,7 +81,8 @@ Jon
 	go_to_work.responses.append("GO WORK")
 	go_to_work.responses_callback.append(func():
 				StoryManager.mails.erase(go_to_work)
-				get_tree().change_scene_to_file("res://proto_minigame/restaurant.tscn")
+				var pref = preload("res://proto_minigame/restaurant.tscn")
+				get_tree().change_scene_to_packed(pref);
 				)
 				
 	go_to_work.responses.append("CRY IN THE DARK ROOM")

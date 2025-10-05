@@ -3,7 +3,6 @@ extends TabContainer
 
 
 func _ready() -> void:
-	Globals.food
 	setup_buttons()
 	if not Globals.intro:
 		print("YYYYYYYYYYY")
@@ -17,6 +16,7 @@ func _ready() -> void:
 	
 	update_bank()
 	update_mail()
+	select(0)
 	
 func setup_buttons():
 	for i in range($Emails2/Emails.get_child_count()):
@@ -24,8 +24,8 @@ func setup_buttons():
 			print("pressed ", i)
 			select(i)
 			)
-	$Emails2/MainMail/VBoxContainer/ColorRect3/Button.connect("pressed",func(): resp(0))
-	$Emails2/MainMail/VBoxContainer/ColorRect3/Button2.connect("pressed",func(): resp(1))
+	$Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer/Button.connect("pressed",func(): resp(0))
+	$Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer/Button2.connect("pressed",func(): resp(1))
 
 var curr_mail_responses_callback=[]
 
@@ -43,14 +43,14 @@ func select(r_id):
 			$Emails2/Emails.get_child(i).get_node("ColorRect").visible=false
 	$Emails2/Emails.get_child(r_id).get_node("ColorRect").visible=true
 	$Emails2/MainMail/VBoxContainer/ColorRect2/Label.text=StoryManager.mails[id].text
-	$Emails2/MainMail/VBoxContainer/ColorRect3/Button.text="______"
-	$Emails2/MainMail/VBoxContainer/ColorRect3/Button2.text="______"
+	$Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer/Button.text="______"
+	$Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer/Button2.text="______"
 	#$Emails2/MainMail/VBoxContainer/ColorRect3/Button.disconnect("pressed",)
 	curr_mail_responses_callback=[]
 	if StoryManager.mails[id].responses.size()>0:
-		$Emails2/MainMail/VBoxContainer/ColorRect3/Button.text=StoryManager.mails[id].responses[0]
+		$Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer/Button.text=StoryManager.mails[id].responses[0]
 		if StoryManager.mails[id].responses.size()>1:
-			$Emails2/MainMail/VBoxContainer/ColorRect3/Button2.text=StoryManager.mails[id].responses[1]
+			$Emails2/MainMail/VBoxContainer/ColorRect3/BoxContainer/Button2.text=StoryManager.mails[id].responses[1]
 		#$Emails2/MainMail/VBoxContainer/ColorRect3/Button.connect("pressed",func():print("run"))
 		curr_mail_responses_callback=StoryManager.mails[id].responses_callback
 	
