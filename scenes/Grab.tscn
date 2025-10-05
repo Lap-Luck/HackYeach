@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bodrgwstyldqs"]
+[gd_scene load_steps=5 format=3 uid="uid://cxw1u3dhmm1oa"]
 
 [ext_resource type="Script" uid="uid://djdk2w8w80ta0" path="res://scripts/Player.gd" id="1_wgwqs"]
 [ext_resource type="PackedScene" uid="uid://dre3dcxk8viv" path="res://objects/FoodBox.tscn" id="2_gsm11"]
 [ext_resource type="PackedScene" uid="uid://c5sf0gd3y6ume" path="res://objects/Cooker.tscn" id="3_bfag3"]
-[ext_resource type="Resource" uid="uid://cct5blskht6yr" path="res://resources/new_resource.tres" id="3_gsm11"]
+[ext_resource type="Resource" uid="uid://cct5blskht6yr" path="res://resources/ofries.tres" id="3_gsm11"]
 
 [node name="Node2D" type="Node2D"]
 

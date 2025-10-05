@@ -3,23 +3,17 @@ class_name ClientPlate
 
 var numberOfPeople=3
 
-func sevrve(food:Food):
-	print(food.foodRes.type)
-	if food.foodRes.type=="Gfries" and $"../order_diplay".food_id==1:
-		$"../Person_display".gen_person()
-		$"../order_diplay".gen()
-		print("OK")
-		numberOfPeople-=1
-		if !food.cooked:
-			StoryManager.STORY_unhappy_customer("Jim","he","burger",StoryManager.Complain.GOT_FINE)
-	
-	if food.foodRes.type=="Ofries" and $"../order_diplay".food_id==0:
-		$"../Person_display".gen_person()
-		$"../order_diplay".gen()
-		print("OK")
-		numberOfPeople-=1
-		if !food.cooked:
-			StoryManager.STORY_unhappy_customer("Jim","he","burger",StoryManager.Complain.GOT_FINE)
+var people = ["Alex", "Alex", "Andy"]
+
+func sevrve(food: Food):
+	if food.foodRes.type != ($"../order_diplay" as OrderDisplay).foodDisplay.foodRes.type or not food.cooked:
+		StoryManager.STORY_unhappy_customer(people[randi() % people.size()],"who",food.foodRes.type ,StoryManager.Complain.GOT_FINE)
+		print("Incorrect")
+	else:
+		print("Correct")
+	$"../Person_display".gen_person()
+	$"../order_diplay".gen()
+	numberOfPeople-=1
 	
 	if numberOfPeople==0:
 		StoryManager.STORY_day_end()

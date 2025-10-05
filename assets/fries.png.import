@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxhpr7s3xkqoj"
-path="res://.godot/imported/oven.png-740d354f88ce90b992ada989bd10b6f9.ctex"
+uid="uid://sfjmh2sxvrp7"
+path="res://.godot/imported/fries.png-fb6afe9c10bc3e536aeb61f8aa1cb40b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/oven.png"
-dest_files=["res://.godot/imported/oven.png-740d354f88ce90b992ada989bd10b6f9.ctex"]
+source_file="res://assets/fries.png"
+dest_files=["res://.godot/imported/fries.png-fb6afe9c10bc3e536aeb61f8aa1cb40b.ctex"]
 
 [params]
 

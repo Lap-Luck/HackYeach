@@ -20,14 +20,12 @@ func handleLMB():
 	params.collision_mask = 0xFFFFFFFF
 	
 	var results : Array = space_state.intersect_point(params, 32);
-	print(results)
 	var foodBoxesDict := results.filter(func (res: Dictionary): return res["collider"] is FoodBox);
 	var foodBoxes := foodBoxesDict.map(func (res: Dictionary): return res["collider"])
 	var cookersDict := results.filter(func (res: Dictionary): return res["collider"] is Cooker);
 	var cookers := cookersDict.map(func (res: Dictionary): return res["collider"])
 	var platesDict := results.filter(func (res: Dictionary): return res["collider"] is ClientPlate);
 	var plates := platesDict.map(func (res: Dictionary): return res["collider"])
-	print("__________",platesDict)
 	
 	if foodBoxes.size() != 0:
 		if not picked_obj:
@@ -62,9 +60,8 @@ func handleLMB():
 				print("Cannot pick, object in hand");
 	elif plates.size() !=0:
 		if picked_obj:
-			print("AAAAAAAAAa")
 			var plate := plates[0] as ClientPlate
-			plate.sevrve(picked_obj)
+			plate.sevrve(picked_obj as Food)
 		
 			picked_obj.queue_free();
 			picked_obj = null;

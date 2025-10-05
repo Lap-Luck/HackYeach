@@ -40,7 +40,7 @@ func STORY_unhappy_customer(name,he_she,food,complain:Complain):
 		mails.append(Mail.new(
 			my_replace("""
 Hi,   
-We got compain from NAME. HE_SHE got FOOD owercooked.
+We got compain from NAME, HE_SHE got FOOD owercooked.
 You shoud do better next time.
 
 Joe Doe
