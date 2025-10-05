@@ -10,6 +10,7 @@ func put_food(food: FoodRes) -> bool:
 		return true;
 	else:
 		return false;
+	$Sprite2D.play('new_animation')
 
 func get_food() -> Food:
 	if foodRes:
@@ -20,5 +21,6 @@ func get_food() -> Food:
 		foodRes = null;
 		food.z_index = 10;
 		return food;
+		$Sprite2D.play('default')
 	else:
 		return null;

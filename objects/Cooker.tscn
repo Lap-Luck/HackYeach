@@ -1,10 +1,30 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5sf0gd3y6ume"]
+[gd_scene load_steps=6 format=3 uid="uid://c5sf0gd3y6ume"]
 
 [ext_resource type="Script" uid="uid://hunyqt45ytfb" path="res://scripts/Cooker.gd" id="1_0d20k"]
-[ext_resource type="Texture2D" uid="uid://dxhpr7s3xkqoj" path="res://assets/oven.png" id="1_mmsif"]
+[ext_resource type="Texture2D" uid="uid://buvlxq6j6yduo" path="res://graphics/microoff.png" id="2_ckaal"]
+[ext_resource type="Texture2D" uid="uid://ccdmfhecncu3j" path="res://graphics/microon.png" id="3_1hy4f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v0ycm"]
 size = Vector2(128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_euv3o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ckaal")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1hy4f")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
 
 [node name="Cooker" type="Area2D"]
 script = ExtResource("1_0d20k")
@@ -12,6 +32,7 @@ script = ExtResource("1_0d20k")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_v0ycm")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_mmsif")
+sprite_frames = SubResource("SpriteFrames_euv3o")
+animation = &"new_animation"
