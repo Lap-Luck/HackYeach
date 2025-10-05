@@ -6,6 +6,9 @@ func _ready() -> void:
 	Globals.food
 	setup_buttons()
 	if not Globals.intro:
+		print("YYYYYYYYYYY")
+		StoryManager.bank=[]
+		StoryManager.mails=[]
 		StoryManager.STORY_unhappy_customer("Joe","he","burger",StoryManager.Complain.GET_BETTER)
 		StoryManager.STORY_day_end()
 		StoryManager.STORY_unhappy_customer("Joe","he","burger",StoryManager.Complain.GOT_FINE)

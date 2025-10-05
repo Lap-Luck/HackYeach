@@ -7,7 +7,7 @@ func _on_back_to_game_pressed() -> void:
 
 
 func _on_settings_toggled(toggled_on: bool) -> void:
-	add_child(Settings)
+	add_child(Globals.Settings)
 	pass # Replace with function body.
 
 func _on_main_menu_toggled(toggled_on: bool) -> void:
