@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://7djygch4t0tg" path="res://scenes/email.tscn" id="2_reixx"]
 [ext_resource type="Texture2D" uid="uid://tcrtcut7kptj" path="res://Pill bottle sptiresheet.png" id="3_reixx"]
 [ext_resource type="Texture2D" uid="uid://dpcp3fry83ucn" path="res://resources/pills_text.tres" id="3_uhids"]
-[ext_resource type="Script" uid="uid://5t854lx5lfo7" path="res://scenes/pills_button.gd" id="4_uhids"]
-[ext_resource type="Script" uid="uid://c5meth4er460q" path="res://scenes/food_button.gd" id="6_yxilm"]
+[ext_resource type="Script" path="res://scenes/pills_button.gd" id="4_uhids"]
+[ext_resource type="Script" path="res://scenes/food_button.gd" id="6_yxilm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhids"]
 atlas = ExtResource("3_reixx")
@@ -69,10 +69,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 917.00006
-offset_top = 423.00006
-offset_right = 3861.0
-offset_bottom = 3871.0
+offset_left = 1536.0
+offset_top = 449.0
+offset_right = 4480.0
+offset_bottom = 3897.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.120428

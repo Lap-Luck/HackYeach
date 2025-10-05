@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://dwsbcedib1ey1"]
+[gd_scene load_steps=66 format=3 uid="uid://dwsbcedib1ey1"]
 
 [ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
 [ext_resource type="Theme" uid="uid://d2yx8dk6pa2ry" path="res://restaurant_margins.tres" id="1_ok7wo"]
@@ -11,14 +11,13 @@
 [ext_resource type="Texture2D" uid="uid://cqi2j2eda4d7k" path="res://graphics/eyes opening/59075F51-80F4-445C-A5E7-DCD5183BC365.png" id="6_f06qt"]
 [ext_resource type="Texture2D" uid="uid://45de6fspf0qg" path="res://proto_minigame/popup_small.png" id="7_7bv6l"]
 [ext_resource type="Texture2D" uid="uid://cdnk54ke03wt2" path="res://graphics/eyes opening/B45049B5-CFF2-49FA-AAFD-931207629E58.png" id="7_qrfuo"]
-[ext_resource type="Script" path="res://proto_minigame/Eyes.gd" id="8_krgyb"]
+[ext_resource type="Script" uid="uid://cg07ghxnkwk8j" path="res://proto_minigame/Eyes.gd" id="8_krgyb"]
 [ext_resource type="Texture2D" uid="uid://c14eptgaxvl04" path="res://proto_minigame/popup_big.png" id="8_vo3r1"]
 [ext_resource type="Texture2D" uid="uid://fhme1frdvfwe" path="res://proto_minigame/food1.png" id="9_bk3oc"]
 [ext_resource type="Texture2D" uid="uid://bopn7j5gc7fks" path="res://assets/room/BC1.png" id="9_jdsvq"]
 [ext_resource type="Texture2D" uid="uid://cegktt7wkcxby" path="res://graphics/client_1/person1/0B93E46D-A461-4759-B869-54318258BE18.png" id="9_lxmn4"]
 [ext_resource type="Texture2D" uid="uid://bgk3mowy2kjlu" path="res://graphics/client_1/person1/AB7F0546-6161-4255-B4AB-43300EAE6A79.png" id="10_msnbr"]
 [ext_resource type="Script" uid="uid://ifu3hrw4y8ph" path="res://proto_minigame/foodDisplay.gd" id="10_n6ibe"]
-[ext_resource type="Script" path="res://proto_minigame/foodDisplay.gd" id="10_n6ibe"]
 [ext_resource type="Texture2D" uid="uid://vekcs1p4em2" path="res://assets/room/BC2.png" id="10_tnkpe"]
 [ext_resource type="Texture2D" uid="uid://3llpdycclrnk" path="res://proto_minigame/food2.png" id="10_u1iig"]
 [ext_resource type="Texture2D" uid="uid://dol8h47x74681" path="res://proto_minigame/drink1.png" id="11_ftbb6"]
@@ -36,10 +35,9 @@
 [ext_resource type="Texture2D" uid="uid://ck15x7qbsggni" path="res://assets/room/SC1.png" id="14_ok7wo"]
 [ext_resource type="Texture2D" uid="uid://d4b85ydkbdf7r" path="res://graphics/client_1/person2/D000F48D-30AD-4E77-A633-A44ABE7E55AE.png" id="15_45at8"]
 [ext_resource type="Script" uid="uid://dvyrp6yvu3hom" path="res://proto_minigame/plate.gd" id="15_70miy"]
+[ext_resource type="Texture2D" uid="uid://3xruruu02rso" path="res://assets/room/SC2.png" id="15_em2se"]
 [ext_resource type="Texture2D" uid="uid://cvnwq4sde01rk" path="res://graphics/bad2.png" id="15_tnkpe"]
 [ext_resource type="Resource" uid="uid://cct5blskht6yr" path="res://resources/ofries.tres" id="15_u1iig"]
-[ext_resource type="Texture2D" uid="uid://3xruruu02rso" path="res://assets/room/SC2.png" id="15_em2se"]
-[ext_resource type="Resource" path="res://resources/ofries.tres" id="15_u1iig"]
 [ext_resource type="Texture2D" uid="uid://bnlshkqeed5l" path="res://assets/room/SC3.png" id="16_cpsul"]
 [ext_resource type="PackedScene" uid="uid://c5sf0gd3y6ume" path="res://objects/Cooker.tscn" id="16_ftbb6"]
 [ext_resource type="Texture2D" uid="uid://dcjphfnrqn6ie" path="res://graphics/client_1/person2/D2C34F01-FB9D-4FCD-BA76-D49432235DAD.png" id="16_ok7wo"]
@@ -527,7 +525,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.24705882, 0.18039216, 0.1254902, 1)
+color = Color(0.247059, 0.180392, 0.12549, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Trays2"]
 layout_mode = 1
@@ -546,7 +544,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="MarginContainer2" type="MarginContainer" parent="Trays2/VBoxContainer"]
 layout_mode = 2
@@ -557,7 +555,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="MarginContainer3" type="MarginContainer" parent="Trays2/VBoxContainer"]
 layout_mode = 2
@@ -568,7 +566,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="MarginContainer4" type="MarginContainer" parent="Trays2/VBoxContainer"]
 layout_mode = 2
@@ -579,7 +577,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Trays2"]
 layout_mode = 1
@@ -599,7 +597,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="MarginContainer2" type="MarginContainer" parent="Trays2/VBoxContainer2"]
 layout_mode = 2
@@ -610,7 +608,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="MarginContainer3" type="MarginContainer" parent="Trays2/VBoxContainer2"]
 layout_mode = 2
@@ -621,7 +619,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="MarginContainer4" type="MarginContainer" parent="Trays2/VBoxContainer2"]
 layout_mode = 2
@@ -632,7 +630,7 @@ theme = ExtResource("1_ok7wo")
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+color = Color(0.154386, 0.107902, 0.0695967, 1)
 
 [node name="Bg" type="Sprite2D" parent="."]
 modulate = Color(0.469421, 0.449973, 0.28445, 1)
@@ -650,14 +648,15 @@ metadata/_edit_use_anchors_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Camera2D/TextureRect"]
 position = Vector2(960.71, 552.58)
 scale = Vector2(0.470845, 0.266396)
+
 [node name="Backgrounds" type="Node2D" parent="Camera2D/TextureRect"]
 position = Vector2(935, 520)
-scale = Vector2(1.0472554, 1.0472554)
+scale = Vector2(1.04726, 1.04726)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Camera2D/TextureRect/Backgrounds"]
 z_index = 2
-position = Vector2(0, 42.070564)
-scale = Vector2(0.3, 0.23268534)
+position = Vector2(0, 42.0706)
+scale = Vector2(0.3, 0.232685)
 sprite_frames = SubResource("SpriteFrames_ejifu")
 autoplay = "default"
 frame_progress = 0.0825186
@@ -761,7 +760,7 @@ frame_progress = 0.178322
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Camera2D/Person_display"]
 visible = false
-position = Vector2(380.99997, 69.99999)
+position = Vector2(381, 70)
 scale = Vector2(0.35, 0.35)
 sprite_frames = SubResource("SpriteFrames_ake25")
 autoplay = "default"
@@ -857,7 +856,7 @@ position = Vector2(-7, 3)
 texture = ExtResource("9_bk3oc")
 
 [node name="FoodBox3" parent="." instance=ExtResource("14_bk3oc")]
-position = Vector2(307, 356)
+position = Vector2(810, -134)
 foodRes = SubResource("Resource_potlj")
 
 [node name="Food1" type="Sprite2D" parent="FoodBox3"]
@@ -865,7 +864,7 @@ position = Vector2(-7, 3)
 texture = ExtResource("37_msnbr")
 
 [node name="FoodBox4" parent="." instance=ExtResource("14_bk3oc")]
-position = Vector2(532, 363)
+position = Vector2(797, 122)
 foodRes = SubResource("Resource_lskon")
 
 [node name="Food1" type="Sprite2D" parent="FoodBox4"]
@@ -873,7 +872,7 @@ position = Vector2(-7, 3)
 texture = ExtResource("38_jdsvq")
 
 [node name="FoodBox5" parent="." instance=ExtResource("14_bk3oc")]
-position = Vector2(786, 254)
+position = Vector2(802, 423)
 foodRes = SubResource("Resource_45at8")
 
 [node name="Food1" type="Sprite2D" parent="FoodBox5"]
@@ -882,7 +881,7 @@ texture = ExtResource("39_tnkpe")
 
 [node name="Cooker" parent="." instance=ExtResource("16_ftbb6")]
 z_index = 1
-position = Vector2(-718, -110)
+position = Vector2(-805, -121)
 
 [node name="Player" type="Node2D" parent="."]
 unique_name_in_owner = true
