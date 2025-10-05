@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ycqpciyjf2ln"]
+
+[ext_resource type="Script" uid="uid://c6wh5a4e57q88" path="res://control.gd" id="1_y4juv"]
+[ext_resource type="AudioStream" uid="uid://diw1a8pry3u1t" path="res://sounds/newdawn.mp3" id="2_5vx3j"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_y4juv")
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_5vx3j")
+autoplay = true
+parameters/looping = true
