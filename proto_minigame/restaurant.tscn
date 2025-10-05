@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://dwsbcedib1ey1"]
+[gd_scene load_steps=57 format=3 uid="uid://dwsbcedib1ey1"]
 
 [ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
 [ext_resource type="Theme" uid="uid://d2yx8dk6pa2ry" path="res://restaurant_margins.tres" id="1_ok7wo"]
@@ -56,7 +56,7 @@
 [ext_resource type="Texture2D" uid="uid://dy7tawufdnost" path="res://proto_minigame/raf_drink1.png" id="37_msnbr"]
 [ext_resource type="Texture2D" uid="uid://idoo4rggf67e" path="res://proto_minigame/raf_drink2.png" id="38_jdsvq"]
 [ext_resource type="Script" uid="uid://bvveffficsguk" path="res://proto_minigame/messy_mouse.gd" id="38_kq7h7"]
-[ext_resource type="Texture2D" uid="uid://b63mwhcekk767" path="res://proto_minigame/raf_drink3.png" id="39_tnkpe"]
+[ext_resource type="PackedScene" uid="uid://t203hpf0oqqk" path="res://bars.tscn" id="50_em2se"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ejifu"]
 animations = [{
@@ -890,3 +890,10 @@ script = ExtResource("17_u1iig")
 
 [node name="Node" type="Node" parent="."]
 script = ExtResource("38_kq7h7")
+
+[node name="Bars" parent="." instance=ExtResource("50_em2se")]
+unique_name_in_owner = true
+offset_left = -634.0
+offset_top = -530.0
+offset_right = -634.0
+offset_bottom = -530.0

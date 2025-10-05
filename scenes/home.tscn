@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://eheurgu137sm"]
+[gd_scene load_steps=12 format=3 uid="uid://eheurgu137sm"]
 
 [ext_resource type="Texture2D" uid="uid://rd05lmvjuf5l" path="res://graphics/background-image-placeholder.png" id="1_w18ys"]
 [ext_resource type="PackedScene" uid="uid://7djygch4t0tg" path="res://scenes/email.tscn" id="2_reixx"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dpcp3fry83ucn" path="res://resources/pills_text.tres" id="3_uhids"]
 [ext_resource type="Script" uid="uid://5t854lx5lfo7" path="res://scenes/pills_button.gd" id="4_uhids"]
 [ext_resource type="Script" uid="uid://c5meth4er460q" path="res://scenes/food_button.gd" id="6_yxilm"]
+[ext_resource type="PackedScene" uid="uid://t203hpf0oqqk" path="res://bars.tscn" id="7_mahjx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhids"]
 atlas = ExtResource("3_reixx")
@@ -52,10 +53,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 44.0
-offset_top = 407.0
-offset_right = 2988.0
-offset_bottom = 3855.0
+offset_left = 101.0
+offset_top = 525.00006
+offset_right = 3045.0
+offset_bottom = 3973.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 0.137881
@@ -69,10 +70,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 917.00006
-offset_top = 423.00006
-offset_right = 3861.0
-offset_bottom = 3871.0
+offset_left = 1568.0001
+offset_top = 603.0001
+offset_right = 4512.0
+offset_bottom = 4051.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = -0.120428
@@ -80,6 +81,14 @@ scale = Vector2(0.07, 0.07)
 texture_normal = SubResource("AtlasTexture_mahjx")
 texture_pressed = ExtResource("3_uhids")
 script = ExtResource("6_yxilm")
+
+[node name="Bars" parent="." instance=ExtResource("7_mahjx")]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = 30.0
+offset_top = 139.0
+offset_right = 30.0
+offset_bottom = 139.00002
 
 [connection signal="pressed" from="PillsButton" to="PillsButton" method="_on_pressed"]
 [connection signal="pressed" from="FoodButton" to="FoodButton" method="_on_pressed"]

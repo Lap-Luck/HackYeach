@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 StoryManager="*res://Global/StoryManager.gd"
 Globals="*res://Global/globals.gd"
 MusicManager="*res://MusicManager.tscn"
+Bars="*res://bars.tscn"
 
 [display]
 
