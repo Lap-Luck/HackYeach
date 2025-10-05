@@ -9,6 +9,6 @@ script = ExtResource("1_peffx")
 type = "green fries"
 tex1 = ExtResource("2_c1blc")
 tex2 = ExtResource("3_c1blc")
-scale = 0.2
+scale = 0.4
 colorModulate = Color(0, 1, 0, 1)
 metadata/_custom_type_script = "uid://cirrc86ef60fn"

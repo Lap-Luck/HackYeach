@@ -11,7 +11,7 @@ var mad=false
 
 func _process(delta: float) -> void:
 	if not mad and Globals.Sanity<80:
-		OS.alert("going mad","Warrning")
+		#OS.alert("going mad","Warrning")
 		mad=true
 	if Globals.Sanity<80:
 		time+=delta

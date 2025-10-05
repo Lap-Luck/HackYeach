@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=3 uid="uid://dwsbcedib1ey1"]
+[gd_scene load_steps=87 format=3 uid="uid://dwsbcedib1ey1"]
 
 [ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
 [ext_resource type="Theme" uid="uid://d2yx8dk6pa2ry" path="res://restaurant_margins.tres" id="1_ok7wo"]
@@ -30,7 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://dknu8t434dp27" path="res://graphics/client_1/person1/B1E38A38-F961-4701-94AE-94CDAB9CB4E7.png" id="12_tnkpe"]
 [ext_resource type="Texture2D" uid="uid://c12c7y6bmnlqo" path="res://assets/room/BC6.png" id="13_45at8"]
 [ext_resource type="Texture2D" uid="uid://dsfed3w5wmxdh" path="res://proto_minigame/drink3.png" id="13_bfqxo"]
-[ext_resource type="Script" uid="uid://7oa25cf12jmv" path="res://proto_minigame/animated_sprite_2d_3.gd" id="13_p7di4"]
+[ext_resource type="Script" path="res://proto_minigame/animated_sprite_2d_3.gd" id="13_p7di4"]
 [ext_resource type="Texture2D" uid="uid://dkk3vt0d1qn5x" path="res://graphics/client_1/person2/0C93EA0A-CFE2-4EAD-96AA-AD59FF09BB98.png" id="13_potlj"]
 [ext_resource type="PackedScene" uid="uid://dre3dcxk8viv" path="res://objects/FoodBox.tscn" id="14_bk3oc"]
 [ext_resource type="Texture2D" uid="uid://fu45fmokdnjp" path="res://graphics/bad1.png" id="14_jdsvq"]
@@ -69,6 +69,7 @@
 [ext_resource type="Script" uid="uid://bvveffficsguk" path="res://proto_minigame/messy_mouse.gd" id="38_kq7h7"]
 [ext_resource type="PackedScene" uid="uid://t203hpf0oqqk" path="res://bars.tscn" id="50_em2se"]
 [ext_resource type="Texture2D" uid="uid://b63mwhcekk767" path="res://proto_minigame/raf_drink3.png" id="63_34h46"]
+[ext_resource type="Script" uid="uid://cdscbfnrj8nje" path="res://proto_minigame/camera_2d_2.gd" id="70_gui16"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ejifu"]
 animations = [{
@@ -572,8 +573,6 @@ script = ExtResource("36_lxmn4")
 type = "orange juice"
 tex1 = ExtResource("37_msnbr")
 tex2 = ExtResource("11_ftbb6")
-scale = 0.2
-colorModulate = Color(1, 1, 1, 1)
 metadata/_custom_type_script = "uid://cirrc86ef60fn"
 
 [sub_resource type="Resource" id="Resource_lskon"]
@@ -581,8 +580,6 @@ script = ExtResource("36_lxmn4")
 type = "apple juice"
 tex1 = ExtResource("38_jdsvq")
 tex2 = ExtResource("12_is1fu")
-scale = 0.2
-colorModulate = Color(1, 1, 1, 1)
 metadata/_custom_type_script = "uid://cirrc86ef60fn"
 
 [sub_resource type="Resource" id="Resource_45at8"]
@@ -590,8 +587,6 @@ script = ExtResource("36_lxmn4")
 type = "berry juice"
 tex1 = ExtResource("63_34h46")
 tex2 = ExtResource("13_bfqxo")
-scale = 0.2
-colorModulate = Color(1, 1, 1, 1)
 metadata/_custom_type_script = "uid://cirrc86ef60fn"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cbe5i"]
@@ -737,7 +732,7 @@ scale = Vector2(0.190247, 0.226153)
 texture = ExtResource("1_flksb")
 metadata/_edit_lock_ = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Node2D" parent="."]
 
 [node name="TextureRect" type="Node2D" parent="Camera2D"]
 position = Vector2(-934, -519)
@@ -855,6 +850,7 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("18_ie7mx")
 
 [node name="Sc6" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/MadBackground"]
+z_index = 1
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("13_45at8")
 
@@ -921,28 +917,28 @@ position = Vector2(47.0588, 51.2)
 scale = Vector2(3, 3)
 
 [node name="small" type="Sprite2D" parent="Camera2D/order_diplay/popup"]
-position = Vector2(9.41175, -5.48572)
-scale = Vector2(0.705882, 0.742857)
+position = Vector2(60.86276, 48.66035)
+scale = Vector2(1.509804, 1.5888894)
 texture = ExtResource("7_7bv6l")
 
 [node name="big" type="Sprite2D" parent="Camera2D/order_diplay/popup"]
-position = Vector2(9.41175, -5.48572)
-scale = Vector2(0.705882, 0.742857)
+position = Vector2(58.352955, 46.01908)
+scale = Vector2(1.4705883, 1.5476196)
 texture = ExtResource("8_vo3r1")
 
 [node name="food" type="Node2D" parent="Camera2D/order_diplay"]
 position = Vector2(13.1765, -3.65714)
 
 [node name="Food1" type="Sprite2D" parent="Camera2D/order_diplay/food"]
-position = Vector2(1.88234, -5.48572)
-scale = Vector2(0.705882, 0.742857)
+position = Vector2(88.470566, 85.63811)
+scale = Vector2(2.058823, 2.1666667)
 texture = ExtResource("9_bk3oc")
 script = ExtResource("10_n6ibe")
 foodRes = ExtResource("15_u1iig")
 
 [node name="Food2" type="Sprite2D" parent="Camera2D/order_diplay/food"]
-position = Vector2(3.76469, -5.48572)
-scale = Vector2(0.705882, 0.742857)
+position = Vector2(90.3529, 85.638084)
+scale = Vector2(2.0588229, 2.1666665)
 texture = ExtResource("10_u1iig")
 script = ExtResource("10_n6ibe")
 foodRes = ExtResource("18_bfqxo")
@@ -953,16 +949,22 @@ position = Vector2(109.176, -18.2857)
 [node name="NONE" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
 
 [node name="Drink1" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
+position = Vector2(195.76515, 89.6)
+scale = Vector2(2.1176505, 2.1176505)
 texture = ExtResource("11_ftbb6")
 script = ExtResource("10_n6ibe")
 foodRes = SubResource("Resource_potlj")
 
 [node name="Drink2" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
+position = Vector2(176.94165, 109.714294)
+scale = Vector2(2.3823566, 2.3823566)
 texture = ExtResource("12_is1fu")
 script = ExtResource("10_n6ibe")
 foodRes = SubResource("Resource_lskon")
 
 [node name="Drink3" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
+position = Vector2(186.3534, 85.94285)
+scale = Vector2(2.2941213, 2.2941213)
 texture = ExtResource("13_bfqxo")
 script = ExtResource("10_n6ibe")
 foodRes = SubResource("Resource_45at8")
@@ -1034,3 +1036,8 @@ offset_left = -634.0
 offset_top = -530.0
 offset_right = -634.0
 offset_bottom = -530.0
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+ignore_rotation = false
+limit_enabled = false
+script = ExtResource("70_gui16")

@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ccdmfhecncu3j" path="res://graphics/microon.png" id="3_1hy4f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v0ycm"]
-size = Vector2(128, 128)
+size = Vector2(342, 191)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_euv3o"]
 animations = [{
@@ -30,6 +30,7 @@ animations = [{
 script = ExtResource("1_0d20k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, -35.5)
 shape = SubResource("RectangleShape2D_v0ycm")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]

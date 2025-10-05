@@ -4,12 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://gg1uhqhjtyjm" path="res://assets/box.jpg" id="2_lfgny"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gognx"]
-size = Vector2(128, 128)
+size = Vector2(162, 162)
 
 [node name="FoodBox" type="Area2D"]
 script = ExtResource("1_lfgny")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_gognx")
 metadata/_edit_lock_ = true
 
