@@ -1,7 +1,8 @@
 [gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dpcp3fry83ucn"]
 
-[ext_resource type="Texture2D" uid="uid://tcrtcut7kptj" path="res://Pill bottle sptiresheet.png" id="1_kxxto"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yxilm"]
+load_path = "res://.godot/imported/sprite_sheet_2.png-310de168937273588b12da9aec0f56a4.ctex"
 
 [resource]
-atlas = ExtResource("1_kxxto")
+atlas = SubResource("CompressedTexture2D_yxilm")
 region = Rect2(4096, 0, 4096, 4096)

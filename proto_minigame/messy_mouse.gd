@@ -1,8 +1,8 @@
 extends Node
 
 var time=5.0
-var p=Vector2i.ZERO
-var op=Vector2i.ZERO
+var p=Vector2.ZERO
+var op=Vector2.ZERO
 
 var mad=false
 

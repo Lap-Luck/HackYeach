@@ -1,8 +1,9 @@
-[gd_scene load_steps=55 format=3 uid="uid://dwsbcedib1ey1"]
+[gd_scene load_steps=56 format=3 uid="uid://dwsbcedib1ey1"]
 
 [ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
+[ext_resource type="Theme" uid="uid://d2yx8dk6pa2ry" path="res://restaurant_margins.tres" id="1_ok7wo"]
 [ext_resource type="Script" uid="uid://b5m88yrpvlfp" path="res://proto_minigame/person_display.gd" id="2_32ace"]
-[ext_resource type="Texture2D" uid="uid://3lxke2aew75o" path="res://graphics/bg_sketch.png" id="2_ed88b"]
+[ext_resource type="Texture2D" uid="uid://lj7xd6l7ipvs" path="res://assets/room/BC4.png" id="2_msnbr"]
 [ext_resource type="Texture2D" uid="uid://dajw35yfaipxw" path="res://graphics/eyes opening/9A97971F-4A1D-4407-ABBE-7A6C060A002B.png" id="3_krgyb"]
 [ext_resource type="Texture2D" uid="uid://dsjoiw770miax" path="res://graphics/eyes opening/615DF632-0AF6-4A67-B661-95F9F8D34EFA.png" id="4_kq7h7"]
 [ext_resource type="Texture2D" uid="uid://bbuemdp7k6ttf" path="res://graphics/eyes opening/4536D44D-3B7E-47BF-8CF7-350DE0B2A684.png" id="5_733et"]
@@ -13,29 +14,41 @@
 [ext_resource type="Script" path="res://proto_minigame/Eyes.gd" id="8_krgyb"]
 [ext_resource type="Texture2D" uid="uid://c14eptgaxvl04" path="res://proto_minigame/popup_big.png" id="8_vo3r1"]
 [ext_resource type="Texture2D" uid="uid://fhme1frdvfwe" path="res://proto_minigame/food1.png" id="9_bk3oc"]
+[ext_resource type="Texture2D" uid="uid://bopn7j5gc7fks" path="res://assets/room/BC1.png" id="9_jdsvq"]
 [ext_resource type="Texture2D" uid="uid://cegktt7wkcxby" path="res://graphics/client_1/person1/0B93E46D-A461-4759-B869-54318258BE18.png" id="9_lxmn4"]
 [ext_resource type="Texture2D" uid="uid://bgk3mowy2kjlu" path="res://graphics/client_1/person1/AB7F0546-6161-4255-B4AB-43300EAE6A79.png" id="10_msnbr"]
 [ext_resource type="Script" uid="uid://ifu3hrw4y8ph" path="res://proto_minigame/foodDisplay.gd" id="10_n6ibe"]
+[ext_resource type="Script" path="res://proto_minigame/foodDisplay.gd" id="10_n6ibe"]
+[ext_resource type="Texture2D" uid="uid://vekcs1p4em2" path="res://assets/room/BC2.png" id="10_tnkpe"]
 [ext_resource type="Texture2D" uid="uid://3llpdycclrnk" path="res://proto_minigame/food2.png" id="10_u1iig"]
 [ext_resource type="Texture2D" uid="uid://dol8h47x74681" path="res://proto_minigame/drink1.png" id="11_ftbb6"]
 [ext_resource type="Texture2D" uid="uid://ccpekqb231xyr" path="res://graphics/client_1/person1/2605D355-611E-4014-B133-196E45F30959.png" id="11_jdsvq"]
+[ext_resource type="Texture2D" uid="uid://bnqw4bibd5faq" path="res://assets/room/BC3.png" id="11_potlj"]
 [ext_resource type="Texture2D" uid="uid://dmo3p483v4m4n" path="res://proto_minigame/drink2.png" id="12_is1fu"]
+[ext_resource type="Texture2D" uid="uid://bffid10oru1i" path="res://assets/room/BC5png.png" id="12_lskon"]
 [ext_resource type="Texture2D" uid="uid://dknu8t434dp27" path="res://graphics/client_1/person1/B1E38A38-F961-4701-94AE-94CDAB9CB4E7.png" id="12_tnkpe"]
+[ext_resource type="Texture2D" uid="uid://c12c7y6bmnlqo" path="res://assets/room/BC6.png" id="13_45at8"]
 [ext_resource type="Texture2D" uid="uid://dsfed3w5wmxdh" path="res://proto_minigame/drink3.png" id="13_bfqxo"]
 [ext_resource type="Texture2D" uid="uid://dkk3vt0d1qn5x" path="res://graphics/client_1/person2/0C93EA0A-CFE2-4EAD-96AA-AD59FF09BB98.png" id="13_potlj"]
 [ext_resource type="PackedScene" uid="uid://dre3dcxk8viv" path="res://objects/FoodBox.tscn" id="14_bk3oc"]
 [ext_resource type="Texture2D" uid="uid://fu45fmokdnjp" path="res://graphics/bad1.png" id="14_jdsvq"]
 [ext_resource type="Texture2D" uid="uid://csmevdnremair" path="res://graphics/client_1/person2/1E5D8B96-188F-447A-9277-CCD109439913.png" id="14_lskon"]
+[ext_resource type="Texture2D" uid="uid://ck15x7qbsggni" path="res://assets/room/SC1.png" id="14_ok7wo"]
 [ext_resource type="Texture2D" uid="uid://d4b85ydkbdf7r" path="res://graphics/client_1/person2/D000F48D-30AD-4E77-A633-A44ABE7E55AE.png" id="15_45at8"]
 [ext_resource type="Script" uid="uid://dvyrp6yvu3hom" path="res://proto_minigame/plate.gd" id="15_70miy"]
 [ext_resource type="Texture2D" uid="uid://cvnwq4sde01rk" path="res://graphics/bad2.png" id="15_tnkpe"]
 [ext_resource type="Resource" uid="uid://cct5blskht6yr" path="res://resources/ofries.tres" id="15_u1iig"]
+[ext_resource type="Texture2D" uid="uid://3xruruu02rso" path="res://assets/room/SC2.png" id="15_em2se"]
+[ext_resource type="Resource" path="res://resources/ofries.tres" id="15_u1iig"]
+[ext_resource type="Texture2D" uid="uid://bnlshkqeed5l" path="res://assets/room/SC3.png" id="16_cpsul"]
 [ext_resource type="PackedScene" uid="uid://c5sf0gd3y6ume" path="res://objects/Cooker.tscn" id="16_ftbb6"]
 [ext_resource type="Texture2D" uid="uid://dcjphfnrqn6ie" path="res://graphics/client_1/person2/D2C34F01-FB9D-4FCD-BA76-D49432235DAD.png" id="16_ok7wo"]
 [ext_resource type="Texture2D" uid="uid://dt635br78lisl" path="res://graphics/client_1/person2/F8BD7220-87B4-488F-A0B5-9CEEEFF5B363.png" id="17_em2se"]
+[ext_resource type="Texture2D" uid="uid://8ov0xyhlqefg" path="res://assets/room/SC4.png" id="17_sd5po"]
 [ext_resource type="Script" uid="uid://djdk2w8w80ta0" path="res://scripts/Player.gd" id="17_u1iig"]
 [ext_resource type="Resource" uid="uid://dvrsyvfm3ey7f" path="res://resources/gfries.tres" id="18_bfqxo"]
 [ext_resource type="Texture2D" uid="uid://nsydsxjwuxqw" path="res://graphics/client_1/person3/114E9C24-CD4E-4453-88FD-385580A2903B.png" id="18_cpsul"]
+[ext_resource type="Texture2D" uid="uid://c12ivfm8fkwbq" path="res://assets/room/SC5.png" id="18_ie7mx"]
 [ext_resource type="Texture2D" uid="uid://do7s3wkkb4m1p" path="res://graphics/client_1/person3/AC38EAEE-0A8C-4293-B874-E164247FCF14.png" id="19_sd5po"]
 [ext_resource type="Texture2D" uid="uid://whjeu154ela5" path="res://graphics/client_1/person3/66A86D51-1282-4F5A-9BC7-D47475BB929D.png" id="20_ie7mx"]
 [ext_resource type="Texture2D" uid="uid://jts5tlbrixno" path="res://graphics/client_1/person3/E99E4080-9FE4-484D-89B2-A9C05D522A63.png" id="21_cahgo"]
@@ -491,6 +504,136 @@ height = 672.0
 
 [node name="Node" type="Node"]
 
+[node name="Trays2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = -960.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="ColorRect" type="ColorRect" parent="Trays2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.24705882, 0.18039216, 0.1254902, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Trays2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.165
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Trays2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
+[node name="MarginContainer2" type="MarginContainer" parent="Trays2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
+[node name="MarginContainer3" type="MarginContainer" parent="Trays2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer/MarginContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
+[node name="MarginContainer4" type="MarginContainer" parent="Trays2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer/MarginContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Trays2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.835
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Trays2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer2/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
+[node name="MarginContainer2" type="MarginContainer" parent="Trays2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer2/MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
+[node name="MarginContainer3" type="MarginContainer" parent="Trays2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer2/MarginContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
+[node name="MarginContainer4" type="MarginContainer" parent="Trays2/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_ok7wo")
+
+[node name="ColorRect2" type="ColorRect" parent="Trays2/VBoxContainer2/MarginContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.15438592, 0.10790218, 0.06959671, 1)
+
 [node name="Bg" type="Sprite2D" parent="."]
 modulate = Color(0.469421, 0.449973, 0.28445, 1)
 position = Vector2(-270.396, -0.624997)
@@ -500,32 +643,86 @@ metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="TextureRect" type="TextureRect" parent="Camera2D"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -960.0
-offset_top = -540.0
-offset_right = 960.0
-offset_bottom = 540.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("2_ed88b")
-expand_mode = 3
+[node name="TextureRect" type="Node2D" parent="Camera2D"]
+position = Vector2(-934, -519)
+metadata/_edit_use_anchors_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Camera2D/TextureRect"]
 position = Vector2(960.71, 552.58)
 scale = Vector2(0.470845, 0.266396)
+[node name="Backgrounds" type="Node2D" parent="Camera2D/TextureRect"]
+position = Vector2(935, 520)
+scale = Vector2(1.0472554, 1.0472554)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Camera2D/TextureRect/Backgrounds"]
+z_index = 2
+position = Vector2(0, 42.070564)
+scale = Vector2(0.3, 0.23268534)
 sprite_frames = SubResource("SpriteFrames_ejifu")
 autoplay = "default"
 frame_progress = 0.0825186
 script = ExtResource("8_krgyb")
 
+[node name="Background" type="Node2D" parent="Camera2D/TextureRect/Backgrounds"]
+script = ExtResource("8_krgyb")
+inverted = true
+
+[node name="Bc1" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/Background"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_jdsvq")
+
+[node name="Bc2" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/Background"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("10_tnkpe")
+
+[node name="Bc3" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/Background"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_potlj")
+
+[node name="Bc4" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/Background"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_msnbr")
+
+[node name="Bc5Png" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/Background"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("12_lskon")
+
+[node name="Bc6" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/Background"]
+z_index = 1
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("13_45at8")
+
+[node name="MadBackground" type="Node2D" parent="Camera2D/TextureRect/Backgrounds"]
+script = ExtResource("8_krgyb")
+
+[node name="Sc1" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/MadBackground"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("14_ok7wo")
+
+[node name="Sc2" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/MadBackground"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("15_em2se")
+
+[node name="Sc3" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/MadBackground"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("16_cpsul")
+
+[node name="Sc4" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/MadBackground"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("17_sd5po")
+
+[node name="Sc5" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/MadBackground"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("18_ie7mx")
+
+[node name="Sc6" type="Sprite2D" parent="Camera2D/TextureRect/Backgrounds/MadBackground"]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("13_45at8")
+
+[node name="People_in_the_back" type="Node2D" parent="Camera2D"]
+
 [node name="Node2D" type="Node2D" parent="Camera2D"]
+position = Vector2(-2, 0)
 
 [node name="Person_display" type="Node2D" parent="Camera2D"]
 position = Vector2(-284, -37)
@@ -563,7 +760,8 @@ autoplay = "default"
 frame_progress = 0.178322
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Camera2D/Person_display"]
-position = Vector2(381, 70)
+visible = false
+position = Vector2(380.99997, 69.99999)
 scale = Vector2(0.35, 0.35)
 sprite_frames = SubResource("SpriteFrames_ake25")
 autoplay = "default"
@@ -586,7 +784,6 @@ position = Vector2(47.0588, 51.2)
 scale = Vector2(3, 3)
 
 [node name="small" type="Sprite2D" parent="Camera2D/order_diplay/popup"]
-visible = false
 position = Vector2(9.41175, -5.48572)
 scale = Vector2(0.705882, 0.742857)
 texture = ExtResource("7_7bv6l")
@@ -617,16 +814,13 @@ foodRes = ExtResource("18_bfqxo")
 position = Vector2(109.176, -18.2857)
 
 [node name="NONE" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
-visible = false
 
 [node name="Drink1" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
-visible = false
 texture = ExtResource("11_ftbb6")
 script = ExtResource("10_n6ibe")
 foodRes = SubResource("Resource_potlj")
 
 [node name="Drink2" type="Sprite2D" parent="Camera2D/order_diplay/drink"]
-visible = false
 texture = ExtResource("12_is1fu")
 script = ExtResource("10_n6ibe")
 foodRes = SubResource("Resource_lskon")
@@ -645,7 +839,8 @@ position = Vector2(346, -160)
 shape = SubResource("CapsuleShape2D_cbe5i")
 
 [node name="FoodBox" parent="." instance=ExtResource("14_bk3oc")]
-position = Vector2(-744, 353)
+z_index = 1
+position = Vector2(-852, 436)
 foodRes = ExtResource("18_bfqxo")
 
 [node name="Food2" type="Sprite2D" parent="FoodBox"]
@@ -653,7 +848,8 @@ position = Vector2(-3, 2)
 texture = ExtResource("10_u1iig")
 
 [node name="FoodBox2" parent="." instance=ExtResource("14_bk3oc")]
-position = Vector2(-518, 362)
+z_index = 1
+position = Vector2(-853, 164)
 foodRes = ExtResource("15_u1iig")
 
 [node name="Food1" type="Sprite2D" parent="FoodBox2"]
@@ -685,7 +881,8 @@ position = Vector2(-7, 3)
 texture = ExtResource("39_tnkpe")
 
 [node name="Cooker" parent="." instance=ExtResource("16_ftbb6")]
-position = Vector2(-294, 352)
+z_index = 1
+position = Vector2(-718, -110)
 
 [node name="Player" type="Node2D" parent="."]
 unique_name_in_owner = true
