@@ -1,0 +1,108 @@
+[gd_scene load_steps=8 format=3 uid="uid://t203hpf0oqqk"]
+
+[ext_resource type="Script" uid="uid://cuv4omkixkfmo" path="res://bars.gd" id="1_5b7ij"]
+
+[sub_resource type="Gradient" id="Gradient_n1c7e"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0.54509807, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_5b7ij"]
+gradient = SubResource("Gradient_n1c7e")
+
+[sub_resource type="Gradient" id="Gradient_o1tdx"]
+offsets = PackedFloat32Array(0, 0.23188406)
+colors = PackedColorArray(0.41568628, 0.24313726, 0.21568628, 1, 0.41568628, 0.24313726, 0.21568628, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_vfjpo"]
+gradient = SubResource("Gradient_o1tdx")
+
+[sub_resource type="Gradient" id="Gradient_ha74j"]
+offsets = PackedFloat32Array(0.29710144)
+colors = PackedColorArray(0.6156863, 1, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ub2jv"]
+gradient = SubResource("Gradient_ha74j")
+
+[node name="Bars" type="Control"]
+layout_mode = 3
+anchor_right = 0.3
+anchor_bottom = 0.233
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5b7ij")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="VBoxContainer"]
+custom_minimum_size = Vector2(550, 50)
+layout_mode = 2
+value = 50.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_5b7ij")
+texture_over = SubResource("GradientTexture1D_vfjpo")
+texture_progress = SubResource("GradientTexture1D_ub2jv")
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/TextureProgressBar2"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_right = 100.0
+offset_bottom = 1.0
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="VBoxContainer/TextureProgressBar2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -11.5
+offset_right = 24.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sanity"
+horizontal_alignment = 1
+
+[node name="Container" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="VBoxContainer"]
+custom_minimum_size = Vector2(550, 50)
+layout_mode = 2
+value = 80.0
+nine_patch_stretch = true
+texture_under = SubResource("GradientTexture1D_5b7ij")
+texture_over = SubResource("GradientTexture1D_vfjpo")
+texture_progress = SubResource("GradientTexture1D_ub2jv")
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/TextureProgressBar"]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="VBoxContainer/TextureProgressBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -11.5
+offset_right = 24.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hunger"
+horizontal_alignment = 1

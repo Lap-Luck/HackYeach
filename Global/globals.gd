@@ -12,7 +12,6 @@ func reduce_sanity(amount: int):
 	if Sanity == 0:
 		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 
-
 func reduce_food(amount: int):
 	food -= amount;
 	food = clamp(food, 0, 100);
