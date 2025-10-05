@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dwsbcedib1ey1"]
+[gd_scene load_steps=23 format=3 uid="uid://dwsbcedib1ey1"]
 
 [ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
 [ext_resource type="Script" uid="uid://b5m88yrpvlfp" path="res://proto_minigame/person_display.gd" id="2_32ace"]
@@ -20,9 +20,10 @@
 [ext_resource type="PackedScene" uid="uid://c5sf0gd3y6ume" path="res://objects/Cooker.tscn" id="16_ftbb6"]
 [ext_resource type="Script" uid="uid://djdk2w8w80ta0" path="res://scripts/Player.gd" id="17_u1iig"]
 [ext_resource type="Resource" uid="uid://dvrsyvfm3ey7f" path="res://resources/gfries.tres" id="18_bfqxo"]
+[ext_resource type="Script" uid="uid://bvveffficsguk" path="res://proto_minigame/messy_mouse.gd" id="21_iatil"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iatil"]
-radius = 119.2057
+radius = 119.206
 
 [node name="Node" type="Node"]
 
@@ -138,3 +139,6 @@ position = Vector2(710, -183)
 [node name="Player" type="Node2D" parent="."]
 unique_name_in_owner = true
 script = ExtResource("17_u1iig")
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("21_iatil")
