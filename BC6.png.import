@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://r06vpd62p62m"
-path="res://.godot/imported/potato.png-ac8f5ecd61929a44fbef286556c6b44b.ctex"
+uid="uid://1w84mvjcnxqv"
+path="res://.godot/imported/BC6.png-43bd8b7341a71182f9ddbe706a2f37e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://graphics/potato.png"
-dest_files=["res://.godot/imported/potato.png-ac8f5ecd61929a44fbef286556c6b44b.ctex"]
+source_file="res://BC6.png"
+dest_files=["res://.godot/imported/BC6.png-43bd8b7341a71182f9ddbe706a2f37e4.ctex"]
 
 [params]
 

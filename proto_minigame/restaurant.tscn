@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://dwsbcedib1ey1"]
+[gd_scene load_steps=45 format=3 uid="uid://dwsbcedib1ey1"]
 
 [ext_resource type="Texture2D" uid="uid://1w27prv7a73s" path="res://proto_minigame/bg.png" id="1_flksb"]
 [ext_resource type="Script" uid="uid://b5m88yrpvlfp" path="res://proto_minigame/person_display.gd" id="2_32ace"]
@@ -37,6 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://do7s3wkkb4m1p" path="res://graphics/client_1/person3/AC38EAEE-0A8C-4293-B874-E164247FCF14.png" id="19_sd5po"]
 [ext_resource type="Texture2D" uid="uid://whjeu154ela5" path="res://graphics/client_1/person3/66A86D51-1282-4F5A-9BC7-D47475BB929D.png" id="20_ie7mx"]
 [ext_resource type="Texture2D" uid="uid://jts5tlbrixno" path="res://graphics/client_1/person3/E99E4080-9FE4-484D-89B2-A9C05D522A63.png" id="21_cahgo"]
+[ext_resource type="Script" path="res://proto_minigame/messy_mouse.gd" id="38_kq7h7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ejifu"]
 animations = [{
@@ -590,4 +591,4 @@ unique_name_in_owner = true
 script = ExtResource("17_u1iig")
 
 [node name="Node" type="Node" parent="."]
-script = ExtResource("21_iatil")
+script = ExtResource("38_kq7h7")

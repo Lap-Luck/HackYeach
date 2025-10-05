@@ -20,7 +20,10 @@ func _process(delta: float) -> void:
 		elif  int(time*3.0)%(Globals.Sanity/10+4)==3:
 			var new_p=get_viewport().get_mouse_position()
 			get_viewport().warp_mouse(p)
-			print(new_p-p)
+			if OS.get_name()=="Linux":
+				Input.warp_mouse(p)
+				print("AAAA")
+			#print(new_p-p)
 			p=p-(new_p-p)/2
 
 func _process2(delta: float) -> void:
