@@ -47,6 +47,8 @@ func select(r_id):
 	curr_mail_responses_callback=[]
 	if StoryManager.mails[id].responses.size()>0:
 		$Emails2/MainMail/VBoxContainer/ColorRect3/Button.text=StoryManager.mails[id].responses[0]
+		if StoryManager.mails[id].responses.size()>1:
+			$Emails2/MainMail/VBoxContainer/ColorRect3/Button2.text=StoryManager.mails[id].responses[1]
 		#$Emails2/MainMail/VBoxContainer/ColorRect3/Button.connect("pressed",func():print("run"))
 		curr_mail_responses_callback=StoryManager.mails[id].responses_callback
 	

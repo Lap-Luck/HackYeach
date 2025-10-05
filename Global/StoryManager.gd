@@ -64,6 +64,7 @@ The Best resaurant manager
 			[],[],current_day))
 
 func STORY_day_end():
+	Globals.food-=10
 	if not fine:
 		bank.append(Transction.new(50,"job salary"))
 	else:
@@ -81,6 +82,12 @@ Jon
 	go_to_work.responses_callback.append(func():
 				StoryManager.mails.erase(go_to_work)
 				get_tree().change_scene_to_file("res://proto_minigame/restaurant.tscn")
+				)
+				
+	go_to_work.responses.append("CRY IN THE DARK ROOM")
+	go_to_work.responses_callback.append(func():
+				StoryManager.mails.erase(go_to_work)
+				get_tree().change_scene_to_file("res://dark.tscn")
 				)
 	mails.append(go_to_work)
 

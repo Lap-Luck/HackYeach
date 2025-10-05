@@ -35,4 +35,4 @@ shape = SubResource("RectangleShape2D_v0ycm")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
 sprite_frames = SubResource("SpriteFrames_euv3o")
-animation = &"new_animation"
+autoplay = "default"

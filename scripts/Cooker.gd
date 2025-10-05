@@ -7,10 +7,10 @@ var foodRes: FoodRes = null;
 func put_food(food: FoodRes) -> bool:
 	if foodRes == null:
 		foodRes = food;
+		$Sprite2D.play('new_animation')
 		return true;
 	else:
 		return false;
-	$Sprite2D.play('new_animation')
 
 func get_food() -> Food:
 	if foodRes:
@@ -20,7 +20,7 @@ func get_food() -> Food:
 		food.foodRes = foodRes;
 		foodRes = null;
 		food.z_index = 10;
-		return food;
 		$Sprite2D.play('default')
+		return food;
 	else:
 		return null;

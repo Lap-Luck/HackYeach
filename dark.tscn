@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw38kd2itclr8"]
+
+[ext_resource type="Script" uid="uid://ds26ukekt0eji" path="res://dark.gd" id="1_pxeri"]
+
+[node name="Dark" type="Node"]
+script = ExtResource("1_pxeri")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13319641, 0.13319641, 0.13319638, 1)
