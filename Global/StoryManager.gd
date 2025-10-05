@@ -85,4 +85,8 @@ Jon
 	mails.append(go_to_work)
 
 	
-	
+func money_count():
+	var saldo=0
+	for t:StoryManager.Transction in StoryManager.bank:
+		saldo+=t.amount
+	return saldo

@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://eheurgu137sm"]
+[gd_scene load_steps=8 format=3 uid="uid://eheurgu137sm"]
 
 [ext_resource type="Texture2D" uid="uid://rd05lmvjuf5l" path="res://graphics/background-image-placeholder.png" id="1_w18ys"]
 [ext_resource type="PackedScene" uid="uid://7djygch4t0tg" path="res://scenes/email.tscn" id="2_reixx"]
 [ext_resource type="Texture2D" uid="uid://tcrtcut7kptj" path="res://Pill bottle sptiresheet.png" id="3_reixx"]
 [ext_resource type="Texture2D" uid="uid://dpcp3fry83ucn" path="res://resources/pills_text.tres" id="3_uhids"]
+[ext_resource type="Script" uid="uid://5t854lx5lfo7" path="res://scenes/pills_button.gd" id="4_uhids"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhids"]
 atlas = ExtResource("3_reixx")
@@ -53,6 +54,7 @@ rotation = 0.137881
 scale = Vector2(0.07, 0.07)
 texture_normal = SubResource("AtlasTexture_uhids")
 texture_pressed = SubResource("AtlasTexture_yxilm")
+script = ExtResource("4_uhids")
 
 [node name="FoodButton" type="TextureButton" parent="."]
 layout_mode = 1
@@ -69,3 +71,5 @@ rotation = -0.120428
 scale = Vector2(0.07, 0.07)
 texture_normal = ExtResource("3_uhids")
 texture_pressed = ExtResource("3_uhids")
+
+[connection signal="pressed" from="PillsButton" to="PillsButton" method="_on_pressed"]

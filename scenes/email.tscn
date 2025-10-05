@@ -269,3 +269,5 @@ metadata/_tab_index = 1
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_u4565")
 text = "this is the place for bank moni graphic $$$"
+
+[connection signal="tab_selected" from="EmailBankApp" to="EmailBankApp" method="_on_tab_selected"]
